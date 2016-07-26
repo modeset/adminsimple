@@ -4,7 +4,7 @@ class Adminsimple::ApplicationController < Adminsimple.configuration.parent_cont
 
   layout :layout
 
-  before_filter :authenticate!, :create_body_class
+  before_action :authenticate!, :create_body_class
 
   protected
 
