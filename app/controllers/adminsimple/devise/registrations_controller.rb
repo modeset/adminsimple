@@ -2,7 +2,7 @@ class Adminsimple::Devise::RegistrationsController < Devise::RegistrationsContro
 
   layout :layout
 
-  before_filter :authenticate!, :add_crumbs
+  before_action :authenticate!, :add_crumbs
 
   private
 

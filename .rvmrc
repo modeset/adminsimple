@@ -1,1 +1,1 @@
-rvm use --create 1.9.3@adminsimple
+rvm use --create 2.3.1@adminsimple

@@ -39,6 +39,13 @@ The install generator puts a `adminsimple.rb` file into your `config/initializer
 provide additional navigation as well providing the devise and simple_form configurations.
 
 
+## Dependencies
+
+We removed the [has_scope gem](https://github.com/plataformatec/has_scope) as an explicit dependency, but it can be a great tool to explicitly scope your models in admin.
+
+We also removed inherited_resources, the behavior of which is now built into Rails through responders.
+
+
 ## License
 
 Licensed under the [MIT License](http://creativecommons.org/licenses/MIT/)

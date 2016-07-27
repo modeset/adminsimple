@@ -4,7 +4,7 @@ class Adminsimple::BaseController < Adminsimple::ApplicationController
 
   respond_to :html, :js
 
-  append_before_filter :add_crumbs
+  append_before_action :add_crumbs
 
   helper_method :collection_title, :resource_title, :resource_icon, :collection_action_path
 
@@ -49,7 +49,7 @@ class Adminsimple::BaseController < Adminsimple::ApplicationController
   def add_crumbs
     add_crumb(collection_title, collection_path)
   end
-  
+
   def collection_action_path(action = nil, optional = nil)
     arr = []
     arr << action if action

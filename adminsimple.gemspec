@@ -16,10 +16,8 @@ Gem::Specification.new do |s|
   s.test_files  = Dir["{spec}/**/*"]
 
   # Runtime Dependencies
-  s.add_dependency 'railties', ['>= 3.2.5','< 5']
+  s.add_dependency 'railties', '>= 5.0.0'
   s.add_dependency 'navigasmic', '>= 1.0.5'
   s.add_dependency 'simple_form', '>= 2.1.0'
-  s.add_dependency 'inherited_resources', '>= 1.4.1'
-  s.add_dependency 'has_scope', '>= 0.6.0.rc'
   s.add_dependency 'crummy'
 end
