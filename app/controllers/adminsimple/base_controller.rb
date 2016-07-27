@@ -1,5 +1,7 @@
 class Adminsimple::BaseController < Adminsimple::ApplicationController
 
+  inherit_resources
+
   respond_to :html, :js
 
   append_before_action :add_crumbs
