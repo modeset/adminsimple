@@ -7,7 +7,7 @@ Adminsimple::Engine.routes.draw do
   get 'settings' => 'adminsimple/settings#index'
 
   # Styleguide route
-  get 'styleguide(/:action)' => 'adminsimple/styleguide#show', as: :styleguide
+  get 'styleguide' => 'adminsimple/styleguide#show', as: :styleguide
 
   # Devise routing
   devise_for Adminsimple.configuration.devise_model.to_s.pluralize.to_sym,
