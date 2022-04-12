@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files  = Dir["{spec}/**/*"]
 
   # Runtime Dependencies
-  s.add_dependency 'railties', ['>= 3.2.5','< 6']
+  s.add_dependency 'railties', ['>= 3.2.5','< 7']
   s.add_dependency 'haml-rails'
   s.add_dependency 'sass-rails'
   s.add_dependency 'normalize-rails'
